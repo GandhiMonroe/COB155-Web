@@ -1,8 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e571f6-4ca4-4ff6-b33f-9f5ad40bcf22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.css" />
+    <list default="true" id="a6e571f6-4ca4-4ff6-b33f-9f5ad40bcf22" name="Default" comment="Install Gumby">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-touch-icon-precomposed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icons/entypo.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icons/entypo.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icons/entypo.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebook.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gumby_mainlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gumby_mainlogo@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/img_silence_demo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_all.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_all.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_base.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_breakpoints.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_button-size.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_calc.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_clearfix.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_custom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_em.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/var/icons/_entypo-icon-list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/var/icons/_entypo.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_even.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_fade.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_fancytiles.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_fixed.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_fonts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_function-list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_function.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_generate-list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_grid-calc.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_height-calc.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_images.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_line-and-height.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/var/_lists.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/_modular-scale-tests.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/_modular-scale.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_navbar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_palette.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_pow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_ratios.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_respond.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_responsivity.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_round-px.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_semantic-grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/var/_settings.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_shame.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_shapes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_sort-list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_strip-units.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_tables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_tabs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_tests.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_toggles.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_tooltips.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_tooltips.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_typography.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_typography.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/ui/_video.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/functions/_visibility.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/gumby.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.fixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/gumby.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/gumby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gumby.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/gumby.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.navbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.radiobtn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.retina.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/gumby.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.skiplink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/gumby.toggleswitch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/humans.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery-1.10.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery-1.10.1.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery-2.0.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery-2.0.2.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/jquery.mobile.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/ui/jquery.validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/modernizr-2.6.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/extensions/modular-scale/lib/modular-scale.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/COB155 Web.iml" afterPath="$PROJECT_DIR$/.idea/COB155 Web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,21 +128,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3338633" vertical-offset="0" max-vertical-offset="629">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.css">
+      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="825">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tests.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_tests.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="405">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_fonts.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/_fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="30" max-vertical-offset="510">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -136,6 +255,9 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/html" />
@@ -205,7 +327,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455828685862</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Started navbar">
+      <created>1455829321775</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1455829321775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -220,7 +348,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32892805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -251,14 +379,16 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Title&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Title&#10;" />
+    <MESSAGE value="Started navbar" />
+    <MESSAGE value="Install Gumby" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install Gumby" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
@@ -266,10 +396,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3338633" vertical-offset="0" max-vertical-offset="629">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="825">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/extensions/modular-scale/stylesheets/modular-scale/_tests.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="405">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="30" max-vertical-offset="510">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>
