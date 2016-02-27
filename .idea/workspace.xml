@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e571f6-4ca4-4ff6-b33f-9f5ad40bcf22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Loughborough-Univeristy-Lboro-Logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+    <list default="true" id="a6e571f6-4ca4-4ff6-b33f-9f5ad40bcf22" name="Default" comment="Thats the end of Gumby. Hello elements">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Loughborough_1916999b.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="COB155 Web.iws" />
@@ -225,7 +223,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456194108775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Thats the end of Gumby. Hello elements">
+      <created>1456586038616</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1456586038616</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -273,7 +277,8 @@
     <MESSAGE value="Title&#10;" />
     <MESSAGE value="Started navbar" />
     <MESSAGE value="Install Gumby" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install Gumby" />
+    <MESSAGE value="Thats the end of Gumby. Hello elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thats the end of Gumby. Hello elements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
