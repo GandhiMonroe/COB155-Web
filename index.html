@@ -15,9 +15,9 @@
 <div id="navbar">
     <ul id="innerNav">
         <li class="navEle"><a class="navEleTag" href="#">Guestbook</a></li>
-        <li class="navEle"><a class="navEleTag" href="#">Weather</a></li>
-        <li class="navEle"><a class="navEleTag" href="#">Updates</a></li>
-        <li class="navEle"><a class="navEleTag" href="#">Events</a></li>
+        <li class="navEle"><a class="navEleTag" href="#weather">Weather</a></li>
+        <li class="navEle"><a class="navEleTag" href="#updates">Updates</a></li>
+        <li class="navEle"><a class="navEleTag" href="#events">Events</a></li>
         <li class="navEle"><a class="navEleTag" href="#">Home</a></li>
     </ul>
 </div>
@@ -35,8 +35,8 @@
                 <a>B421770</a>
             </div>
             <div id="obj">
-                <h3>Objectives:</h3>
-                <ul>
+                <h3 id="objHeader">Objectives:</h3>
+                <ul id="objList">
                     <li>xxx</li>
                     <li>xxx</li>
                     <li>xxx</li>
@@ -90,6 +90,18 @@
         <li>DateTime - Title</li>
         <li>DateTime - Title</li>
     </ul>
+</div>
+<div id="weather">
+    <div id="lboro-weather">
+        <a href="http://www.accuweather.com/en/gb/loughborough/le11-5/weather-forecast/324590" class="aw-widget-legal"></a>
+        <div id="awcc1456597028576" class="aw-widget-current"  data-locationkey="324590" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1456597028576"></div>
+        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    </div>
+    <div id="loc-weather">
+        <a href="http://www.accuweather.com/en/gb/loughborough/le11-5/weather-forecast/324590" class="aw-widget-legal"></a>
+        <div id="awcc1456597170759" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1456597170759"></div>
+        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    </div>
 </div>
 </body>
 </html>
