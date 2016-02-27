@@ -1,26 +1,109 @@
-body{
+body {
     margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-#navbar{
+
+#navbar {
     width: 100%;
 }
-ul {
+
+#icon {
+    width: 30%;
+    margin: 5px;
+}
+
+#title {
+    width: 65%;
+    float: right;
+    font-size: 3vw;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#largeImage {
+    width: 65%;
+}
+
+#info {
+    float: right;
+    width: 35%;
+    font-size: 3vmin;
+    height: 100%;
+}
+
+#about {
+    height: 50%;
+    border: solid 1px black;
+}
+
+#obj {
+    height: 50%;
+    border: solid 1px black;
+}
+
+#innerNav{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-li {
-    float: left;
+
+.navEle {
+    float: right;
+    width: 20%;
 }
-li a {
+
+.navEleTag {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 2.5vmin;
 }
+
 li a:hover {
     background-color: #111;
+}
+
+#events {
+    width: 100%;
+}
+
+#eventTable {
+    width: 100%;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 4vmin;
+}
+
+#updates {
+    width: 100%;
+    border: solid 1px black;
+}
+
+#updateTitle {
+    font-size: 4vmin;
+    margin: 10px;
+}
+
+#updateList {
+    font-size: 3vmin;
+}
+
+@media only screen and (max-device-width: 640px) {
+    #largeImage {
+        width: 100%;
+    }
+
+    #info {
+        width: 100%;
+    }
+
+    #about, #obj {
+        width: 49%;
+        float: left;
+    }
 }
