@@ -7,6 +7,12 @@ body {
     width: 100%;
 }
 
+#container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #icon {
     width: 30%;
     margin: 5px;
@@ -35,13 +41,11 @@ body {
 
 #about {
     height: 50%;
-    border: solid 1px black;
     padding: 3%;
 }
 
 #obj {
     height: 50%;
-    border: solid 1px black;
     padding: 3%;
 }
 
@@ -83,7 +87,7 @@ li a:hover {
     width: 100%;
 }
 
-#eventTable {
+#eventTable, #guestTable {
     width: 100%;
     border: solid 1px black;
     text-align: center;
@@ -117,6 +121,20 @@ li a:hover {
         width: 43%;
         float: left;
     }
+}
+
+.display {
+    width: 100%;
+    border: solid 1px black;
+}
+
+#displayImage {
+    width: 20%;
+}
+
+#simple_sketch {
+    width: 30%;
+    border: solid 1px black;
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {

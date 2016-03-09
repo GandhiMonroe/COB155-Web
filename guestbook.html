@@ -1,10 +1,82 @@
-<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <title>Guestbook</title>
 </head>
 <body>
-
+<div id="navbar">
+    <ul id="innerNav">
+        <li class="navEle"><a class="navEleTag" href="#">Guestbook</a></li>
+        <li class="navEle"><a class="navEleTag" href="index.html">Weather</a></li>
+        <li class="navEle"><a class="navEleTag" href="index.html">Updates</a></li>
+        <li class="navEle"><a class="navEleTag" href="index.html">Events</a></li>
+        <li class="navEle"><a class="navEleTag" href="index.html">Home</a></li>
+    </ul>
+</div>
+<div id="container">
+    <form id="form">
+        <label for="nickname">Nickname: </label><input id="nickname" type="text">
+        <label for="comment">Comments: </label><textarea id="comment"></textarea>
+        <label for="sex">Sex: </label><select id="sex">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Not Specified</option>
+    </select>
+        <label for="age">Age: </label><input id="age" type="number">
+        <input id="avatar" type="file" accept="image/*;capture=camera">
+        <input type="submit" value="Submit">
+    </form>
+    <canvas id="simple_sketch" width="800" height="300"></canvas>
+    <div class="display">
+        <img id="displayImage" src="#">
+    </div>
+</div>
 </body>
+<script>
+    $(function() {
+        $('#simple_sketch').sketch();
+    });
+
+    $('#form').submit(function () {
+
+        var str = "";
+        readURL();
+
+        str += $('#nickname').val() + '   ';
+        str += $('#sex').val() + '   ';
+        str += $('#age').val() + '   ';
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var s = position.coords.latitude + "," + position.coords.longitude;
+                $('.display').append(s);
+            });
+        }
+
+        str += $('#comment').val() + '   ';
+        $('.display').append(str);
+        return false;
+    });
+
+    function readIMG(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#displayImage').attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#avatar").change(function(){
+        readIMG(this);
+    });
+
+</script>
 </html>
