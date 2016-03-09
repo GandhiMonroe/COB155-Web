@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: gainsboro;
 }
 
 #navbar {
@@ -8,9 +9,10 @@ body {
 }
 
 #container {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
 #icon {
@@ -130,6 +132,7 @@ li a:hover {
 
 #displayImage {
     width: 20%;
+    display: none;
 }
 
 #simple_sketch {
