@@ -108,7 +108,10 @@
         var dataURL = canvas.toDataURL("image/png");
         document.getElementById('displayCanvas').src = dataURL;
 
-        str += "<li>Comments: " + $('#comment').val() + "</li></ul>";
+        if($('#comment').val() != ""){
+            str += "<li>Comments: " + $('#comment').val() + "</li></ul>";
+        }
+
         $('.display').append(str);
         return false;
     });
