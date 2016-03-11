@@ -3,7 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/weather.css" type="text/css" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
     <title>Hey Mobile</title>
 </head>
 <body>
@@ -22,85 +25,122 @@
     </ul>
 </div>
 <div id="container">
-<div id="contentBlock1">
-    <div>
-        <img id="largeImage" src="images/Loughborough_1916999b.jpg">
+    <div id="contentBlock1">
+        <div>
+            <img id="largeImage" src="images/Loughborough_1916999b.jpg">
 
-        <div id="info">
-            <div id="about">
-                <h3>About me:</h3>
-                <a>Ben Diliberto</a><br/>
-                <a>B421770</a>
-            </div>
-            <div id="obj">
-                <h3 id="objHeader">Objectives:</h3>
-                <ul id="objList">
-                    <li>xxx</li>
-                    <li>xxx</li>
-                    <li>xxx</li>
-                </ul>
+            <div id="info">
+                <div id="about">
+                    <h3>About me:</h3>
+                    <a>Ben Diliberto</a><br/>
+                    <a>B421770</a>
+                </div>
+                <div id="obj">
+                    <h3 id="objHeader">Objectives:</h3>
+                    <ul id="objList">
+                        <li>xxx</li>
+                        <li>xxx</li>
+                        <li>xxx</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div id="events">
-    <table id="eventTable">
-        <tr class="tableRow">
-            <td>Event</td>
-            <td>Time</td>
-            <td>Venue</td>
-            <td>Price</td>
-            <td>Description</td>
-        </tr>
-        <tr class="tableRow">
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-        </tr>
-        <tr class="tableRow">
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-        </tr>
-        <tr class="tableRow">
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-        </tr>
-        <tr class="tableRow">
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-            <td>xxx</td>
-        </tr>
-    </table>
-</div>
-<div id="updates">
-    <h3 id="updateTitle">Learning Updates:</h3>
-    <ul id="updateList">
-        <li>DateTime - Title</li>
-        <li>DateTime - Title</li>
-    </ul>
-</div>
-<div id="weather">
-    <div id="lboro-weather">
-        <a href="http://www.accuweather.com/en/gb/loughborough/le11-5/weather-forecast/324590" class="aw-widget-legal"></a>
-        <div id="awcc1456597028576" class="aw-widget-current"  data-locationkey="324590" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1456597028576"></div>
-        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    <div id="events">
+        <table id="eventTable">
+            <tr class="tableRow">
+                <td>Event</td>
+                <td>Time</td>
+                <td>Venue</td>
+                <td>Price</td>
+                <td>Description</td>
+            </tr>
+            <tr class="tableRow">
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+            </tr>
+            <tr class="tableRow">
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+            </tr>
+            <tr class="tableRow">
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+            </tr>
+            <tr class="tableRow">
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxx</td>
+            </tr>
+        </table>
     </div>
-    <div id="loc-weather">
-        <a href="http://www.accuweather.com/en/gb/loughborough/le11-5/weather-forecast/324590" class="aw-widget-legal"></a>
-        <div id="awcc1456597170759" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1456597170759"></div>
-        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    <div id="updates">
+        <h3 id="updateTitle">Learning Updates:</h3>
+        <ul id="updateList">
+            <li>DateTime - Title</li>
+            <li>DateTime - Title</li>
+        </ul>
     </div>
-</div>
+    <div>
+        <div id="weather" class="localweather"></div>
+        <div id="weather1" class="lboroweather"></div>
+    </div>
 </div>
 </body>
+<script>
+    $(document).ready(function () {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            loadWeather(position.coords.latitude + ',' + position.coords.longitude); //load weather using your lat/lng coordinates
+        });
+    });
+
+    function loadWeather(location, woeid) {
+        $.simpleWeather({
+            location: location,
+            woeid: woeid,
+            unit: 'c',
+            success: function (weather) {
+                html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+                html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
+                html += '<li class="currently">' + weather.currently + '</li>';
+                html += '<li>' + weather.alt.temp + '&deg;F</li></ul>';
+
+                $(".localweather").html(html);
+            },
+            error: function (error) {
+                $(".localweather").html('<p>' + error + '</p>');
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        $.simpleWeather({
+            location: 'Austin, TX',
+            woeid: '',
+            unit: 'c',
+            success: function(weather) {
+                html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+                html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
+                html += '<li class="currently">' + weather.currently + '</li>';
+                html += '<li>' + weather.alt.temp + '&deg;F</li></ul>';
+
+                $("#weather1").html(html);
+            },
+            error: function(error) {
+                $("#weather1").html('<p>'+error+'</p>');
+            }
+        });
+    });
+</script>
 </html>

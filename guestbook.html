@@ -4,10 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="js/sketch.js"></script>
     <title>Guestbook</title>
 </head>
+
 <body>
+<div>
+    <img id="icon" src="images/Loughborough-Univeristy-Lboro-Logo.png">
+
+    <h1 id="title">Guestbook</h1>
+</div>
+
 <div id="navbar">
     <ul id="innerNav">
         <li class="navEle"><a class="navEleTag" href="#">Guestbook</a></li>
@@ -17,49 +25,91 @@
         <li class="navEle"><a class="navEleTag" href="index.html">Home</a></li>
     </ul>
 </div>
+
 <div id="container">
-    <form id="form">
-        <label for="nickname">Nickname: </label><input id="nickname" type="text">
-        <label for="comment">Comments: </label><textarea id="comment"></textarea>
-        <label for="sex">Sex: </label><select id="sex">
-        <option>Male</option>
-        <option>Female</option>
-        <option>Not Specified</option>
-    </select>
-        <label for="age">Age: </label><input id="age" type="number">
-        <input id="avatar" type="file" accept="image/*;capture=camera">
-        <input type="submit" value="Submit">
-    </form>
-    <canvas id="simple_sketch" width="800" height="300"></canvas>
-    <div class="display">
-        <img id="displayImage" src="#" alt="Image">
-        <img id="displayCanvas" src="">
+    <div>
+        <h3 id="desc">On this page you can leave a message by using the form below. Your message will then be displayed below the form at the bottom of the page</h3>
     </div>
+    <div id="formDiv">
+        <form id="form">
+            <label for="nickname">Nickname: </label><input id="nickname" type="text"><br/>
+
+            <label for="sex">Sex: </label><select id="sex">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Not Specified</option>
+        </select><br/>
+
+            <label for="age">Age: </label><input id="age" type="number"><br/>
+
+            <label for="comment">Comments: </label><textarea id="comment"></textarea><br/>
+
+            <label for="avatar">Please select an avatar</label><input id="avatar" type="file" accept="image/*;capture=camera"><br/>
+
+            <label for="simple_sketch">Please draw graffiti here</label><canvas id="simple_sketch" width="800" height="500"></canvas>
+            <br/>
+
+            <input type="submit" value="Submit"><br/>
+        </form>
+    </div>
+    <h1 id="postHeader">Your Post</h1>
+    <div class="display" id="display">
+        <img id="displayImage" src="#" alt="Avatar">
+        <img id="displayCanvas" src="" alt="Pattern">
+    </div>
+    <h3 id="swipeInfo">You can swipe left on this post to remove it<br/> <------------ </h3>
 </div>
 </body>
+
 <script>
-    $(function() {
+
+    var coords = "";
+
+    $("#display").swipeleft(function(){
+        $(".post").html('');
+        $('#displayImage').attr('src', '');
+        $('#displayCanvas').attr('src', '');
+        $("#postHeader").css('visibility', 'hidden');
+        $("#swipeInfo").css('visibility', 'hidden');
+    });
+
+    $(function () {
         $('#simple_sketch').sketch();
+    });
+
+    $(document).ready(function() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                coords += position.coords.latitude + "," + position.coords.longitude;
+            });
+        }
     });
 
     $('#form').submit(function () {
 
         var str = "";
 
-        str += $('#nickname').val() + '   ';
-        str += $('#sex').val() + '   ';
-        str += $('#age').val() + '   ';
+        $("#postHeader").css('visibility', 'visible');
+        $("#swipeInfo").css('visibility', 'visible');
 
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                var s = position.coords.latitude + "," + position.coords.longitude;
-                $('.display').append(s);
-            });
+        str += "<ul class='post'>";
+        if($('#nickname').val() != ""){
+            str += "<li>Nickname: " + $('#nickname').val() + "</li><br/>";
+        }
+        str += "<li>Sex: " + $('#sex').val() + "</li><br/>";
+        if($('#age').val() > 0 && $('#age').val() != ""){
+            str += "<li>Age: " + $('#age').val() + "</li><br/>";
+        }
+        if(navigator.geolocation){
+            str += "<li>Geolocation: " + coords + "</li><br/>";
         }
 
-        str += $('#comment').val() + '   ';
+        var canvas = document.getElementById("simple_sketch");
+        var dataURL = canvas.toDataURL("image/png");
+        document.getElementById('displayCanvas').src = dataURL;
+
+        str += "<li>Comments: " + $('#comment').val() + "</li></ul>";
         $('.display').append(str);
-        $('#displayCanvas').src = $('#simple_sketch').toDataURL();
         return false;
     });
 
@@ -68,7 +118,7 @@
             var reader = new FileReader();
 
             reader.onload = function (e) {
-                $('#displayImage').css('display', 'block');
+                $('#displayImage').css('visibility', 'visible');
                 $('#displayImage').attr('src', e.target.result);
             };
 
@@ -76,9 +126,8 @@
         }
     }
 
-    $("#avatar").change(function(){
+    $("#avatar").change(function () {
         readIMG(this);
     });
-
 </script>
 </html>

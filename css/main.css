@@ -13,6 +13,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
+    overflow: hidden;
 }
 
 #icon {
@@ -123,26 +124,98 @@ li a:hover {
         width: 43%;
         float: left;
     }
+
+    #formDiv, .display {
+        width: 100%;
+    }
+    #weather, #weather1{
+        width: 100%;
+    }
 }
 
 .display {
     width: 100%;
     border: solid 1px black;
+    float: right;
 }
 
 #displayImage {
-    width: 20%;
-    display: none;
+    width: 25%;
+    float: left;
+}
+
+img {
+    background-color: gainsboro;
+    font-size: 2vmax;
+    text-align: center;
+}
+
+#displayCanvas {
+    width: 25%;
+    float: right;
+}
+
+.post {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+#postHeader {
+    text-align: center;
+    visibility: hidden;
 }
 
 #simple_sketch {
-    width: 30%;
+    width: 100%;
     border: solid 1px black;
 }
 
+#formDiv {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+#form {
+    padding: 2%;
+    border: solid 1px black;
+}
+
+.localweather {
+    float: left;
+    overflow: hidden;
+}
+
+.lboroweather {
+    float: right;
+    overflow: hidden;
+}
+
+#desc {
+    text-align: center;
+}
+
+#swipeInfo {
+    text-align: center;
+    visibility: hidden;
+}
+
+input, select, canvas, textarea {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+label {
+    font-size: 2vmax;
+}
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    #awcc1456597028576, #awcc1456597170759 {
-        width: 50%;
-        float: left;
+    #weather, #weather1{
+        width: 100%;
     }
 }
